@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bootstrap Project</title>
+		<link rel="stylesheet" href="bootstrap.css" />
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik+Mono+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img src="./img/logo.png" alt="logo" width="50" /> Rugby Store
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarContent"
+						aria-controls="navbarContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									href="#"
+									id="productsDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+								>
+									Products
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="productsDropdown">
+									<li><a class="dropdown-item" href="#boots">Boots</a></li>
+									<li><a class="dropdown-item" href="#balls">Balls</a></li>
+									<li><a class="dropdown-item" href="#shirts">Shirts</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="about-us.html">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Contact</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link disabled"
+									href="#"
+									tabindex="-1"
+									aria-disabled="true"
+									>Coming Soon</a
+								>
+							</li>
+						</ul>
+
+						<button
+							class="btn btn-secondary"
+							data-bs-toggle="modal"
+							data-bs-target="#signInModal"
+						>
+							Sign in
+						</button>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Sign-in Modal -->
+			<div
+				class="modal fade"
+				id="signInModal"
+				tabindex="-1"
+				aria-labelledby="signInModalLabel"
+				aria-hidden="true"
+			>
+				<div class="modal-dialog">
+					<div class="modal-content bg-dark text-light">
+						<div class="modal-header">
+							<h5 class="modal-title" id="signInModalLabel">Sign in</h5>
+							<button
+								type="button"
+								class="btn-close btn-close-white"
+								data-bs-dismiss="modal"
+								aria-label="Close"
+							></button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-floating mb-3">
+									<input
+										type="email"
+										class="form-control bg-secondary text-light border-0"
+										id="floatingEmail"
+										placeholder="name@example.com"
+									/>
+									<label for="floatingEmail">Email address</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input
+										type="password"
+										class="form-control bg-secondary text-light border-0"
+										id="floatingPassword"
+										placeholder="Password"
+									/>
+									<label for="floatingPassword">Password</label>
+								</div>
+								<div class="form-check mb-3">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="rememberCheck"
+									/>
+									<label class="form-check-label" for="rememberCheck"
+										>Remember me</label
+									>
+								</div>
+								<button type="submit" class="btn btn-primary w-100">
+									Sign in
+								</button>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-bs-dismiss="modal"
+							>
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="bg-dark text-light py-5">
+			<section class="hero">
+				<div class="container col-xl-10 col-xxl-8 px-4 py-5">
+					<div class="row align-items-center g-lg-5 py-5">
+						<div class="text-center">
+							<h1 class="display-4 fw-bold lh-1 mb-3 text-center">
+								Welcome to our <br />rugby store
+							</h1>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product container my-4">
+				<div class="row g-4" id="boots">
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/boots/first_boots.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Kooga Strike Pro</h5>
+								<p class="card-text">
+									Dominate the game with the Aqua Blaze X1. Featuring a
+									breathable knit upper and adaptive fit system, these boots
+									combine style and performance. The striking aqua finish
+									ensures you’ll stand out on every play.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/boots/second_boots.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Shadow Viper Elite</h5>
+								<p class="card-text">
+									Dominate the game with the Aqua Blaze X1. Featuring a
+									breathable knit upper and adaptive fit system, these boots
+									combine style and performance. The striking aqua finish
+									ensures you’ll stand out on every play.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/boots/third_boots.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Aqua Blaze X1</h5>
+								<p class="card-text">
+									Dominate the game with the Aqua Blaze X1. Featuring a
+									breathable knit upper and adaptive fit system, these boots
+									combine style and performance. The striking aqua finish
+									ensures you’ll stand out on every play.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-4 pt-5" id="balls">
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/balls/first_ball.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Gilbert Highland Pride</h5>
+								<p class="card-text">
+									Designed for speed and precision, the Gilbert Velocity Pro
+									features a durable grip surface and aerodynamic panel design,
+									making it perfect for fast-paced training and match play.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/balls/second_ball.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Gilbert Highland Pride</h5>
+								<p class="card-text">
+									Celebrate heritage and performance with the Gilbert Highland
+									Pride, crafted with reinforced seams and a high-quality
+									bladder for maximum control. A must-have for Scotland rugby
+									fans.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/balls/third_ball.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Gilbert Kinetica Elite</h5>
+								<p class="card-text">
+									Celebrate heritage and performance with the Gilbert Highland
+									Pride, crafted with reinforced seams and a high-quality
+									bladder for maximum control. A must-have for Scotland rugby
+									fans.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row g-4 pt-5" id="shirts">
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/shirts/first_shirt.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Springbok Pride Jersey</h5>
+								<p class="card-text">
+									The Emerald Warriors Classic Jersey captures Ireland’s
+									fighting spirit with its iconic green design and durable
+									construction. Perfect for fans who want to support their team
+									in style, both on and off the pitch.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/shirts/second_shirt.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Les Bleus Heritage Polo</h5>
+								<p class="card-text">
+									Celebrate the spirit of France with the Les Bleus Heritage
+									Polo. Crafted for comfort and elegance, this shirt blends
+									classic style with modern performance, making it ideal for
+									both match days and casual wear.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img
+								src="./img/shirts/third-shirt.png"
+								class="card-img-top"
+								alt="product"
+							/>
+							<div class="card-body">
+								<h5 class="card-title">Emerald Warriors Classic</h5>
+								<p class="card-text">
+									The Emerald Warriors Classic Jersey captures Ireland’s
+									fighting spirit with its iconic green design and durable
+									construction. Perfect for fans who want to support their team
+									in style, both on and off the pitch.
+								</p>
+								<a href="#" class="btn btn-primary">Buy</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="bg-dark text-light py-4">
+			<div
+				class="container d-flex flex-column flex-md-row justify-content-between align-items-center"
+			>
+				<div class="mb-3 mb-md-0">
+					<a class="navbar-brand text-light" href="#">
+						<img src="./img/logo.png" alt="logo" width="40" class="me-2" />
+						Rugby Store
+					</a>
+				</div>
+				<ul class="nav mb-3 mb-md-0">
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#boots">Boots</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#balls">Balls</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-light" href="#shirts">Shirts</a>
+					</li>
+				</ul>
+				<p class="mb-0 text-muted">
+					&copy; 2025 Rugby Store. All rights reserved.
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>
